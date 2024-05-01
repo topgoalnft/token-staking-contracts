@@ -1,0 +1,23 @@
+node_modules
+.env
+
+# Hardhat files
+/cache
+/artifacts
+
+# TypeChain files
+/typechain
+/typechain-types
+
+# solidity-coverage files
+/coverage
+/coverage.json
+
+/bakup
+.DS_Store
+Memo.md
+env.example
+package-lock.json
+Deploy.md
+/scripts
+/contracts/TestToken.sol
