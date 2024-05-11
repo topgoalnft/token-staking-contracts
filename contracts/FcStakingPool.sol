@@ -126,7 +126,6 @@ contract FcStakingPool is Ownable, ReentrancyGuard {
 
     function changeActivityLockDays(uint256 activityId, uint256 lockDays) external onlyOwner {
         require(activityState[activityId], "Activity is not valid");
-        require(lockDays>= 0, "Invalid lockDays");
 
         activityLockDays[activityId] = lockDays;
         emit ActivityLockDaysChanged(activityId, lockDays);
